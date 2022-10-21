@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Academico-aula</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Missing resource (Recurso ausente) -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/jsp/404.jsp</location>
+	</error-page>
+	<!-- Missing login (Login ausente) -->
+	<error-page>
+		<error-code>401</error-code>
+		<location>/WEB-INF/jsp/erro.jsp</location>
+	</error-page>
+	<!-- forbidden directory listing (Lista de diretórios proibidos) -->
+	<error-page>
+		<error-code>403</error-code>
+		<location>/erro.jsp</location>
+	</error-page>
+	<!--Uncaught exception (Exceção não capturada) -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/jsp/erro.jsp</location>
+	</error-page>
+	<!-- unsupported servlet method (Método servlet não suportado) -->
+	<error-page>
+		<error-code>503</error-code>
+		<location>/WEB-INF/jsp/erro.jsp</location>
+	</error-page>
+
+</web-app>
+
+

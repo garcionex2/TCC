@@ -1,0 +1,1051 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75)), url(https://cdn.discordapp.com/attachments/878840667504271450/980588216174379058/pagina_corte.png);
+    background-size: cover;
+    background-position: center-top;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    list-style: none;
+    display: inline-block;
+    margin: 15px -15px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .05em;
+    color: #faf9f6;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 20px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .2em;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #faf9f6;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ffb347;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a:hover {
+    text-decoration: none;
+    color: #ffb347;
+    transition: 0.5s;
+}
+
+
+
+/* Banner Content */
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #faf9f6;
+
+}
+
+.content h1 {
+    font-size: 8vw;
+    margin-top: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    margin-bottom: -10px;
+}
+
+.content p {
+    font-size: 1.5vw;
+    margin: 0px auto;
+    font-weight: 200;
+    line-height: 25px;
+    font-family: 'Albert Sans', sans-serif;
+    font-style: italic;
+}
+
+/* Body */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+
+
+/* Gallery */
+
+#gallery h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-shadow: -3px 3px #fff, -2px 2px #fff, -1px 1px #fff;
+}
+
+.gallery {
+    height: 510px;
+    width: 80vw;
+    display: flex;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+
+}
+
+.image-box {
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+
+.image-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: .5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border: 5px solid #fff;
+}
+
+.image-box:hover {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.first img {
+    border-radius: 15px 0 0 15px;
+}
+
+.last img {
+    border-radius: 0 15px 15px 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.container h1 {
+    font-size: 50px
+}
+
+.about {
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+    background-color: #000;
+
+}
+
+.about .left {
+    padding: 2% 0;
+    float: left;
+    width: 50%;
+    display: inline-block;
+}
+
+.about .right {
+    width: 50%;
+    display: inline-block;
+}
+
+.about .right img {
+    width: 100%
+}
+
+.about .left h1 {
+    text-align: center;
+    color: #ffb347;
+    margin: 0 0 10px 0;
+}
+
+.about .left hr {
+    width: 20%;
+    border-top: 6px solid #fff;
+    border-bottom: none;
+}
+
+.about .left p {
+    font-size: 1rem;
+    margin: 40px auto;
+    width: 80%;
+    color: #fff;
+}
+
+/* =========================== SERVICES AND PRICES========*/
+
+.services {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-wrapper {
+    width: 90%;
+    color: white;
+    margin: 50px;
+
+}
+
+.prices-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 5px solid #fafafa;
+    padding: 10px;
+
+}
+
+.col-3-img {
+    width: 60%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 2.5% 0;
+
+}
+
+.name-icon {
+    font-size: 5rem;
+
+}
+
+.text-col-wrapper {
+    width: 80%;
+    min-width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2.5% 0;
+}
+
+
+.col-3 {
+    width: 40%;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+
+}
+
+.service-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+
+}
+
+.services-note {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 2.5%;
+}
+
+.services-small-note {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+/* =====================FOOOTER, TIMES AND MAP============== */
+footer {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+
+.footer-col-3 {
+    display: flex;
+    color: #fafafa;
+    flex-direction: column;
+    width: 30%;
+    min-width: 260px;
+    margin: 3% 1%;
+}
+
+.footer-titles {
+    text-align: center;
+    font-size: 1.7rem;
+    margin: 10px 10px 20px 10px;
+    text-transform: uppercase;
+}
+
+.footer-line {
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+}
+
+.footer-line:hover {
+    font-weight: 700;
+}
+
+.line-right-side {
+    padding-left: 2%;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: 70%;
+    min-height: 60vh;
+    opacity: 0.5;
+}
+
+iframe:hover {
+    width: 100%;
+    height: 70%;
+    opacity: 0.9;
+}
+
+
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    color: #fafafa;
+    padding: 40px 10px;
+    background: #000;
+    font-size: 1rem;
+}
+
+/*=======================Login =========================*/
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#000000, #000000);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ae9344;
+    font-size: 12px;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ae9344;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box a:hover {
+    background: #ae9344;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ae9344,
+        0 0 25px #ae9344,
+        0 0 50px #ae9344,
+        0 0 100px #ae9344;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae9344);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae9344);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ae9344);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ae9344);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/*=======================Cadastro =========================*/
+
+
+.cadastro-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.cadastro-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.cadastro-box .user-box {
+    position: relative;
+
+}
+
+
+.cadastro-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+}
+
+.cadastro-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.cadastro-box .user-box input:focus~label,
+.cadastro-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #ae9344;
+    font-size: 12px;
+}
+
+.cadastro-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ae9344;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.cadastro-box a:hover {
+    background: #ae9344;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ae9344,
+        0 0 25px #ae9344,
+        0 0 50px #ae9344,
+        0 0 100px #ae9344;
+}
+
+.cadastro-box a span {
+    position: absolute;
+    display: block;
+}
+
+.cadastro-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ae9344);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.cadastro-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ae9344);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.cadastro-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ae9344);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.cadastro-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ae9344);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    background: black;
+    box-sizing: border-box;
+}
+
+.product-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 4%;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    padding: 24px;
+    background: #fff;
+    border-radius: 0;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.product-brand {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #646464;
+}
+
+.product-cat {
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #646464;
+    background: #f5f5f5;
+    padding: 6px 12px;
+    border-radius: 0;
+
+}
+
+.product-name {
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-bottom: 6px;
+    margin-top: 0;
+    color: #000;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.w-full {
+    width: 50%;
+}
+
+.mb-sm {
+    margin-bottom: 8px;
+}
+
+.price {
+    margin-right: 12px;
+}
+
+.strike {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.btn-col {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    padding: 1.4em 0;
+    border-radius: 0;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.rubicons {
+    width: 24px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+    background: #333;
+}
+
+.icon-link:hover>.rubicons {
+    transform: translate(3px, -3px);
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.date {
+    border: 2px solid #ffb347;
+    box-shadow: inset 2px 2px 3px #ffb347;
+    border-radius: 3px;
+    vertical-align: super;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 15PX;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+
+}
+
+
+.agendar-card {
+    display: inline-block;
+    width: 40%;
+    border-radius: 1px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 4px solid #ffb347;
+    line-height:30px;
+}
+
+.card2 {
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border-radius: 0;
+    width: 90%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 900px;
+    border: 3px solid #ffb347;
+    display: inline-block;
+}
+
+.product-name2 {
+    align-items: center;
+    display: inline-block;
+    font-size: 2.8rem;
+    line-height:20%;
+     margin-bottom: 6px;
+    margin-top: 20px;
+    color: #000;
+    object-position: right;
+    
+}
+
+.product-brand2 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 20;
+    color:white;
+}
+.price2 {
+    margin-right: 60px;
+    font-size: 40px;
+}
+
+
+
+.product-item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  padding: 15px;
+  padding-left: 140px;
+  min-height: 500px;
+  right: 10px;
+
+}
+
+.product-gallery {
+  width: 50%;
+  border: 3px solid #ffb347;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-gallery img {
+  display: block;
+  min-height: 100%;
+  height: 100%;
+  min-width: 100%;
+}
+
+.product-data {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.product-firm {
+  text-transform: uppercase;
+  font-size: 30 px;
+  color: #dddddd;
+
+}
+
+.product-name {
+  font-size: 40px;
+  line-height: 24px;
+  margin: 15px 0;
+  color: white;
+}
+
+.product-price {
+  font-size: 25px;
+  color:white;
+  margin: 10px 0;
+}
+
+.product-price::before {
+  content: "R$ ";
+}
+
+.product-size {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.product-size::before {
+  content: "Sizes: ";
+}
+
+.buy-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 15px 55px;
+  background-color: #333333;
+  border: none;
+  transition: 0.4s;
+  margin: 15px 0;
+}
+
+.buy-btn:hover,
+.buy-btn:focus,
+.buy-btn:active {
+  box-shadow: 1px 1px 15px 1px #999;
+  transition: 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-info {
+  margin: 50px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: whitesmoke;
+}
